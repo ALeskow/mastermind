@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Game</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div id="header"><div id="menu">The game chooses a random sequence you nedd to guess in a maximum of attempts.
@@ -12,7 +12,7 @@
         and how many in the right color but wrong place (white pin)
     </div><h1>---</h1></div>
     <div id="game">
-        <section><div class="secret">.</div></section>
+        <div id="secret">.</div>
         <section><div class="attempt">.</div> <div class="score">.</div></section>
         <section><div class="attempt">.</div> <div class="score">.</div></section>
         <section><div class="attempt">.</div> <div class="score">.</div></section>
@@ -22,11 +22,13 @@
         <section><div class="attempt">.</div> <div class="score">.</div></section>
         <section><div class="attempt">.</div> <div class="score">.</div></section>
         <section><div class="attempt">.</div> <div class="score">.</div></section>
-        <section><div id="current">...</div></section>
-        <section><div id="colors">
+        <div id="current">...</div>
+        <div id="keyboard"><div id="colors">
             <button id="enter">.</button>
-        </div></section>
+        </div></div>
     </div>
+    <script scr="assets/js/game.js"></script>
+    <script scr="assets/js/config.js"></script>
 </body>
 </html>
 
